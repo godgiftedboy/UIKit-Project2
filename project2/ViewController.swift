@@ -8,6 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    // @IBOutlet is a way of connecting code to storyboard layouts
     @IBOutlet var button1: UIButton!
     
     @IBOutlet var button2: UIButton!
@@ -59,7 +60,8 @@ class ViewController: UIViewController {
         
         title = countries[correctAnswer].uppercased();
     }
-
+    
+    //@IBAction is a way of making storyboard layouts trigger code.
     @IBAction func button1Tapped(_ sender: UIButton) {
     }
     
