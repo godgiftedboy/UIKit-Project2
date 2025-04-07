@@ -21,13 +21,13 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="us"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hFw-oG-2PG">
-                                <rect key="frame" x="84.666666666666686" y="230" width="224" height="100"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YJL-9n-790">
+                                <rect key="frame" x="84.666666666666686" y="360" width="224" height="100"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="us"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YJL-9n-790">
-                                <rect key="frame" x="84.666666666666686" y="360" width="224" height="100"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hFw-oG-2PG">
+                                <rect key="frame" x="84" y="236" width="224" height="100"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="us"/>
                             </button>
@@ -45,7 +45,7 @@
                     <navigationItem key="navigationItem" id="Yxo-b2-oKR"/>
                     <connections>
                         <outlet property="button1" destination="fso-yh-XBq" id="cv3-R6-wAz"/>
-                        <outlet property="button2" destination="hFw-oG-2PG" id="6Wl-Jb-udQ"/>
+                        <outlet property="button2" destination="hFw-oG-2PG" id="3sy-iQ-gOm"/>
                         <outlet property="button3" destination="YJL-9n-790" id="Pt1-Ee-JJQ"/>
                     </connections>
                 </viewController>
