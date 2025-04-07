@@ -47,11 +47,11 @@ class ViewController: UIViewController {
         button3.configuration?.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0)
         
         
-        
+        // askQuestion(action: nil);
         askQuestion();
     }
     
-    func askQuestion(){
+    func askQuestion(action: UIAlertAction! = nil){
         countries.shuffle();
         correctAnswer = Int.random(in: 0...2);
         button1.setImage(UIImage(named: countries[0]), for: .normal)
@@ -63,6 +63,20 @@ class ViewController: UIViewController {
     
     //@IBAction is a way of making storyboard layouts trigger code.
     @IBAction func button1Tapped(_ sender: UIButton) {
+        var title: String
+
+        if sender.tag == correctAnswer {
+            title = "Correct"
+            score += 1
+        } else {
+            title = "Wrong"
+            score -= 1
+        }
+        
+        let ac  = UIAlertController(title: title, message: "Your Score: \(score)", preferredStyle: .alert)
+        
+        ac.addAction(UIAlertAction(title: "Continue", style: .default, handler: askQuestion));
+        present(ac, animated: true);
     }
     
 }
